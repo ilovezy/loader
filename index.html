@@ -58,6 +58,43 @@
                 <span></span>
             </div>
         </div>
+
+        <style>
+        .twist {
+            border: 1px solid #ccc;
+            text-align: center;
+        }
+        
+        .twist span {
+            display: inline-block;
+            vertical-align: middle;
+            width: 30px;
+            height: 30px;
+            margin: 50px auto;
+            background: #0AB781;
+            animation: twist 0.5s ease-in-out infinite alternate;
+        }
+        
+        @keyframes twist {
+            25% {
+                transform: skew(50deg);
+            }
+            50% {
+                transform: skew(0deg);
+            }
+            75% {
+                transform: skew(-50deg);
+            }
+        }
+        </style>
+        <div class="col-sm-4">
+            <h2 class="text-center">twist</h2>
+            <div class="twist">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
     </div>
 
 </body>
