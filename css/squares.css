@@ -1,0 +1,58 @@
+/*
+* @Author: fhc
+* @Date:   2015-11-19 14:37:52
+* @Last Modified by:   fhc
+* @Last Modified time: 2015-11-19 14:41:14
+*/
+
+.squares {
+    border: 1px solid #ccc;
+    text-align: center;
+}
+
+.squares span {
+    display: inline-block;
+    vertical-align: middle;
+    width: 10px;
+    height: 20px;
+    margin: 50px auto;
+    background: #EF619D;
+    -webkit-animation: squares 1s ease-in-out infinite;
+    animation: squares 1s ease-in-out infinite;
+}
+
+.squares span:nth-of-type(2) {
+    -webkit-animation-delay: 0.2s;
+    animation-delay: 0.2s;
+}
+
+.squares span:nth-of-type(3) {
+    -webkit-animation-delay: 0.4s;
+    animation-delay: 0.4s;
+}
+
+.squares span:nth-of-type(4) {
+    -webkit-animation-delay: 0.6s;
+    animation-delay: 0.6s;
+}
+
+.squares span:nth-of-type(5) {
+    -webkit-animation-delay: 0.8s;
+    animation-delay: 0.8s;
+}
+
+@-webkit-keyframes squares {
+    50% {
+        opacity: 0.7;
+        -webkit-transform: scale(1, 2);
+        transform: scale(1, 2);
+    }
+}
+
+@keyframes squares {
+    50% {
+        opacity: 0.7;
+        -webkit-transform: scale(1, 2);
+        transform: scale(1, 2);
+    }
+}
