@@ -1,0 +1,38 @@
+/*
+* @Author: fhc
+* @Date:   2015-11-19 14:47:02
+* @Last Modified by:   fhc
+* @Last Modified time: 2015-11-19 14:58:40
+*/
+
+.bubble {
+    border: 1px solid #ccc;
+    text-align: center;
+}
+
+.bubble span {
+    width: 30px;
+    height: 30px;
+    background: #18A3F6;
+    display: inline-block;
+    vertical-align: middle;
+    margin: 50px auto;
+    border-radius: 50%;
+    box-shadow: 0 0px 5px #18A3F6;
+    animation: bubble 1s ease-in-out infinite;
+}
+
+@keyframes bubble {
+    0% {
+        transform: scale(0.2);
+        box-shadow: 0 0px 20px #18A3F6;
+    }
+    50% {
+        transform: scale(2);
+        box-shadow: 0 0px 20px #18A3F6;
+    }
+    100% {
+        transform: scale(0.2);
+        box-shadow: 0 0px 20px #18A3F6;
+    }
+}
