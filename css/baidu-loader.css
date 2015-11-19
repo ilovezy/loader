@@ -1,0 +1,66 @@
+/*
+* @Author: fhc
+* @Date:   2015-11-19 14:16:23
+* @Last Modified by:   fhc
+* @Last Modified time: 2015-11-19 14:25:10
+*/
+
+.baidu-loader {
+    border: 1px solid #ccc;
+    overflow: hidden;
+    text-align: center;
+}
+
+.baidu-loader span {
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    margin: 50px auto;
+    vertical-align: middle;
+    display: inline-block;
+    opacity: 0.8;
+}
+
+.baidu-loader span:nth-of-type(1) {
+    background: red;
+    -webkit-animation: swing-1 2s ease-in-out infinite;
+    animation: swing-1 2s ease-in-out infinite;
+}
+
+.baidu-loader span:nth-of-type(2) {
+    background: green;
+}
+
+.baidu-loader span:nth-of-type(3) {
+    background: blue;
+    -webkit-animation: swing-2 2s ease-in-out infinite;
+    animation: swing-2 2s ease-in-out infinite;
+}
+
+@-webkit-keyframes swing-1 {
+    50% {
+        -webkit-transform: translate(90px);
+        transform: translate(90px);
+    }
+}
+
+@keyframes swing-1 {
+    50% {
+        -webkit-transform: translate(90px);
+        transform: translate(90px);
+    }
+}
+
+@-webkit-keyframes swing-2 {
+    50% {
+        -webkit-transform: translate(-90px);
+        transform: translate(-90px);
+    }
+}
+
+@keyframes swing-2 {
+    50% {
+        -webkit-transform: translate(-90px);
+        transform: translate(-90px);
+    }
+}
