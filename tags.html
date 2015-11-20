@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+    <title></title>
+</head>
+
+<body>
+    <div class="container">
+        <style>
+        body {
+            padding-left: 100px;
+        }
+        
+        a {
+            display: inline-block;
+            position: relative;
+            background: #ccc;
+            color: green;
+            line-height: 1.5;
+            text-decoration: none;
+            padding-left: 1rem;
+            padding-right: 0.5rem;
+            margin-right: 1rem;
+        }
+        
+        a:before,
+        a:after {
+            position: absolute;
+            content: "";
+        }
+        
+        a:before {
+            border: 0.75em solid transparent;
+            border-right-color: #ccc;
+            top: 0;
+            left: -1.5em;
+            height: 0;
+            width: 0;
+        }
+        
+        a:after {
+            background: white;
+            width: 0.5em;
+            height: 0.5em;
+            top: 0.5em;
+            left: -0.125em;
+            border-radius: 50%;
+        }
+        
+        a:hover {
+            background: grey;
+            color: white;
+        }
+        
+        a:hover:before {
+            border-right-color: grey;
+        }
+        </style>
+        <div>
+            <a href="">Tag1</a>
+            <a href="">Tag1</a>
+            <a href="">Tag1</a>
+            <a href="">Tag1</a>
+            <a href="">Tag1</a>
+        </div>
+
+
+    </div>
+
+</body>
+
+</html>
