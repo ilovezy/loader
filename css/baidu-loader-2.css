@@ -1,0 +1,45 @@
+/*
+* @Author: fhc
+* @Date:   2015-11-20 13:10:01
+* @Last Modified by:   fhc
+* @Last Modified time: 2015-11-20 13:10:07
+*/
+
+.baidu-loader-2 {
+    border: 1px solid #ccc;
+    overflow: hidden;
+    text-align: center;
+}
+
+.baidu-loader-2 span {
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    margin: 50px auto;
+    background: red;
+    vertical-align: middle;
+    display: inline-block;
+    position: relative;
+}
+
+.baidu-loader-2 span:before,
+.baidu-loader-2 span:after {
+    content: "";
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    display: inline-block;
+}
+
+.baidu-loader-2 span:before {
+    margin-left: -70px;
+    background: green;
+    animation: swing-1 2s ease-in-out infinite;
+}
+
+.baidu-loader-2 span:after {
+    position: absolute;
+    margin-left: 50px;
+    background: blue;
+    animation: swing-2 2s ease-in-out infinite;
+}
